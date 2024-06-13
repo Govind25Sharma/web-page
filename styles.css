@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #060e01;
+    padding: 20px;
+    box-shadow: 10 10 10px rgba(1, 180, 229, 0.1);
+}
+
+.list-container {
+    flex: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    border-right: 1px solid #0c0000;
+    padding-right: 20px;
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+#item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#item-list li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#item-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: calc(100% - 10px); /* Make input field wider */
+}
+
+button {
+    padding: 5px 10px;
+}
+
+#error-message {
+    color: rgb(205, 8, 8);
+}
